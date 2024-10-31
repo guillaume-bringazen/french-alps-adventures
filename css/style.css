@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Full-Screen Background Image */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.75; /* Slight transparency */
+    filter: brightness(0.7);
+}
+
+/* Typography */
+h2, h3 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    color: #e1e1e1;
+    max-width: 800px;
+    margin:  auto;
+}
+
+a {
+text-align: center;
+text-decoration: none;
+}
+/* Header and Apply Button */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.85);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    img {
+
+    width: 50px;
+    height: 50px;
+    }
+
+}
+
+.header h1 {
+    font-size: 2.5em;
+
+}
+
+.apply-button1 {
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+   
+}
+
+.apply-button2 {
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+    
+}
+
+.apply-button3 {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+
+}
+
+    .apply-button1:hover {
+    transform: scale(1.05);
+}
+    .apply-button2:hover {
+    transform: scale(1.05);
+}
+    .apply-button3:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    padding: 2em 2em;
+}
+
+/* Section Styling */
+.section {
+    padding: 2em 2em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 4em auto;
+}
+
+/* Hikes Section */
+.hikes {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 2em 2em;
+}
+
+.hike-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.hike-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.hike-item:hover {
+    transform: translateY(-5px);
+}
+
+.hike-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff6f61;
+}
+
+.hike-item h3 {
+    color: #ff6f61;
+    font-size: 1.4em;
+    padding: 1em 0;
+}
+
+.hike-item p {
+    color: #ddd;
+    padding: 0 1em 1em;
+}
+
+/* Who we are Section */
+.wwa {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 2em 2em;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+
+
+/* Signup Section */
+.signup {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em 2em;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 2em auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.9em;
+}
